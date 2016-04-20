@@ -18,11 +18,19 @@
     </style>
 </head>
 <body>
+    <div style="position: fixed;z-index: 5001;">
+        <input type="button" onclick="javascript:start();" value="开始" />
+        <input type="button" onclick="javascript:stop();" value="停止" />
+    </div>
+
     <div id="entrance-loading-animate"></div>
     <script src="./entrance-loading-animate-global.js"></script>
     <script type="text/javascript">
-        if (window.RsqLoading) {
-          window.RsqLoading.start('entrance-loading-animate');
+        function start(){
+            window.RsqLoading.start('entrance-loading-animate');
+        }
+        function stop(){
+            window.RsqLoading.stop();
         }
     </script>
 </body>
