@@ -1,8 +1,8 @@
 /*
 * @Author: apple
 * @Date:   2016-04-19 18:54:11
-* @Last Modified by:   apple
-* @Last Modified time: 2016-04-19 19:09:40
+* @Last Modified by:   qin yang
+* @Last Modified time: 2016-04-20 18:55:22
 */
 
 ;(function (window, document) {
@@ -25,7 +25,10 @@
 		if (wrapperEle) wrapperEle.innerHTML = template;
 	};
 	var stop = function () {
-		if (wrapperEle) wrapperEle.innerHTML = '';
+		if (wrapperEle) {
+			wrapperEle.innerHTML = '';
+			wrapperEle.style.display = 'none';
+		}
 	};
 	window.RsqLoading = {
 		start: start,
