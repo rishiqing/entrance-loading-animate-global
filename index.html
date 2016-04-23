@@ -21,17 +21,30 @@
     <div style="position: fixed;z-index: 5001;">
         <input type="button" onclick="javascript:start();" value="开始" />
         <input type="button" onclick="javascript:stop();" value="停止" />
+        <input type="button" onclick="javascript:loadData();" value="加载数据" />
     </div>
 
     <div id="entrance-loading-animate"></div>
+
     <script src="./entrance-loading-animate-global.js"></script>
     <script type="text/javascript">
+        //  测试数据，测试在js执行过程中，加载动画的效果
+        function loadData(){
+            var ele = document.getElementById('entrance-loading-animate');
+            for(var i = 0; i < 10000; i++){
+                var node = document.createElement('div');
+                node.innerHTML = '<div>测试数据加载' + i + '</div>';
+                ele.appendChild(node);
+            }
+        }
+
         function start(){
             window.RsqLoading.start('entrance-loading-animate');
         }
         function stop(){
             window.RsqLoading.stop();
         }
+        start();
     </script>
 </body>
 </html>
