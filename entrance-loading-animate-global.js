@@ -2,11 +2,11 @@
 * @Author: apple
 * @Date:   2016-04-19 18:54:11
 * @Last Modified by:   qin yang
-* @Last Modified time: 2016-04-20 18:55:22
+* @Last Modified time: 2016-05-23 18:50:59
 */
 
 ;(function (window, document) {
-	var template = '<div class="loading">'
+	var template = '<div class="gb-loading">'
 			     +      '<div class="gb-panel">'
                  +          '<div class="gb-cloud gb-cloud1"></div>'
                  +          '<div class="gb-abs-full gb-globe">'

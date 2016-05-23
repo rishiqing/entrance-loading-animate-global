@@ -1,4 +1,4 @@
-.loading {position: absolute;left: 50%;top: 50%;width: 200px;height: 200px;margin: -120px 0 0 -120px;}
+.gb-loading {position: absolute;left: 50%;top: 50%;width: 200px;height: 200px;margin: -120px 0 0 -120px;}
 
 /*加载页面主css*/
 .gb-panel {position: relative;width: 100%; height: 100%;}
