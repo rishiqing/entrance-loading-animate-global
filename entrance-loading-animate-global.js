@@ -27,7 +27,10 @@
 	var stop = function () {
 		if (wrapperEle) {
 			wrapperEle.innerHTML = '';
-			wrapperEle.style.display = 'none';
+			wrapperEle.style.opacity = 0;
+		 	setTimeout(function () {
+				wrapperEle.style.display = 'none';
+			}, 500);
 		}
 	};
 	window.RsqLoading = {
