@@ -2,7 +2,7 @@
 * @Author: apple
 * @Date:   2016-04-19 18:54:11
 * @Last Modified by:   qin yang
-* @Last Modified time: 2016-05-23 18:50:59
+* @Last Modified time: 2016-05-30 15:17:28
 */
 
 ;(function (window, document) {
@@ -22,7 +22,14 @@
     var wrapperEle;
 	var start = function (id) {
 		wrapperEle = document.getElementById(id);
-		if (wrapperEle) wrapperEle.innerHTML = template;
+		if (wrapperEle) {
+			wrapperEle.innerHTML = template;
+			if (wrapperEle.className) {
+				wrapperEle.className += ' gb-background-style';
+			} else {
+				wrapperEle.className = 'gb-background-style';
+			}
+		}
 	};
 	var stop = function () {
 		if (wrapperEle) {

@@ -1,3 +1,15 @@
+.gb-background-style {
+	position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background: #eee;
+    z-index: 5000;
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+}
 .gb-loading {position: absolute;left: 50%;top: 50%;width: 200px;height: 200px;margin: -120px 0 0 -120px;}
 
 /*加载页面主css*/
